@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Login from './componets/user/login.js';
+import Registation from './componets/user/registration.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
+import Mycontext from './context/UserState';
+import Header from './componets/header/Header';
+import { Home } from './componets/main/home';
 function App() {
+  const [isLoggedIn,setLoggedIn] = useState(false);
+  const [userId,setUserId] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Mycontext.Provider value={{isLoggedIn,setLoggedIn,userId,setUserId}}>
+        <div className="App">
+          <Router>
+            <Header/>
+            <Routes>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/login' element={<Login />} />
+              <Route path='/registration' element={<Registation />} />
+            </Routes>
+          </Router>
+        </div>
+    </Mycontext.Provider>
+    
   );
 }
 

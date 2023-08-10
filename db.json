@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "wre",
+      "email": "er@gmail.com",
+      "password": "erltgkdh",
+      "phone": "12334",
+      "id": 2
+    }
+  ],
+  "user": [
+    {
+      "name": "wre",
+      "email": "er@gmail.com",
+      "password": "erltgkdh",
+      "phone": "12334",
+      "id": 1
+    },
+    {
+      "name": "wre",
+      "email": "er@gmail.com",
+      "password": "erltgkdh",
+      "phone": "12334",
+      "id": 2
+    },
+    {
+      "name": "ganesh",
+      "email": "gh@gmail.com",
+      "password": "erltgkdh",
+      "phone": "12334",
+      "id": 3
+    },
+    {
+      "name": "ganesdh",
+      "email": "dfgjjdf@gmail.com",
+      "password": "123",
+      "phone": "22343",
+      "comfirm_password": "",
+      "id": 4
+    },
+    {
+      "name": "tet",
+      "email": "trd@gmail.comq",
+      "password": "1234",
+      "phone": "34651",
+      "comfirm_password": "",
+      "id": 5
+    },
+    {
+      "name": "test@gmail.com",
+      "email": "test@gmial.com",
+      "password": "123",
+      "phone": "345",
+      "comfirm_password": "",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "email": "test@gmial.ocm",
+      "password": "123",
+      "phone": "345",
+      "comfirm_password": "",
+      "id": 7
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123",
+      "phone": "123",
+      "comfirm_password": "",
+      "id": 8
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123",
+      "phone": "123",
+      "comfirm_password": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "phone": "",
+      "comfirm_password": "",
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
